@@ -1,0 +1,226 @@
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+#home_logo{
+	height: 86px;
+	width: 186px;
+}
+
+#firstMenu {
+	text-align: center;
+	height: 50px;
+	width: auto; /* [변경] 하위 메뉴와 동일하게 맞춤 */
+	position: relative;
+	background-color: #2D2D2D; /* [추가] 늘어난만큼 배경색도 보이도록 수정 */
+	padding-top: 10px;
+}
+
+#firstMenu ul { /* 메인 메뉴 안의 ul을 설정함: 상위메뉴의 ul+하위 메뉴의 ul */
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#firstMenu ul li { /* 메인 메뉴 안에 ul 태그 안에 있는 li 태그의 스타일 적용(상위/하위메뉴 모두) */
+	color: white;
+	background-color: #2d2d2d;
+	float: left;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+	-position: relative;
+}
+
+.menuLink, .submenuLink { /* 상위 메뉴와 하위 메뉴의 a 태그에 공통으로 설정할 스타일 */
+	text-decoration: none;
+	display: block;
+	width: 200px;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: "Nanum Gothic", gulim;
+}
+
+.menuLink { /* 상위 메뉴의 글씨색을 흰색으로 설정 */
+	color: white;
+}
+
+.firstMenuLi:hover .menuLink { /* 상위 메뉴의 li에 마우스오버 되었을 때 스타일 설정 */
+	color: white;
+	background-color: #4d4d4d;
+}
+
+.longLink { /* 좀 더 긴 메뉴 스타일 설정 */
+	width: 190px;
+}
+
+.submenuLink { /* 하위 메뉴의 a 태그 스타일 설정 */
+	color: #2d2d2d;
+	background-color: #DDD; /* [변경] 배경색 변경 */
+	-border: solid 1px black; /* [삭제] 테두리 삭제 */
+	-margin-right: -1px; /* [삭제] 공백 보정 삭제 */
+}
+
+.submenu { /* 하위 메뉴 스타일 설정 */
+	position: absolute;
+	height: 0px;
+	overflow:hidden;
+	transition: height .2s;
+	-webkit-transition: height .2s;
+	-moz-transition: height .2s;
+	-o-transition: height .2s;
+	width: 1700px;
+	left: 0;
+	background-color: #DDD; /* [추가] 하위 메뉴 전체에 배경색 설정 */
+}
+
+.submenu li {
+	display: inline-block;
+}
+
+.firstMenuLi:hover .submenu {
+	height: 32px;
+}
+
+.submenuLink:hover {
+	color: black;
+	background-color: #dddddd;
+}
+.container{
+	font-size: 25px;
+	font-family: "Nanum Gothic", gulim;
+}
+.viewMore{
+	padding-top: 50px;
+}
+.sort_type{
+	font-family: "Nanum Gothic", gulim;
+	text-align: left;
+	font-size: 25px;
+}
+.big_category_name{
+	text-align: left;
+	font-size: 20px;
+	padding-left: 20px;
+}
+div.row{
+	font-size: 15px;
+	font-weight: normal;
+	font-family: "Nanum Gothic", gulim;
+}
+div.table{
+	font-size: 15px;
+	font-weight: normal;
+	font-family: "Nanum Gothic", gulim;
+}
+#bct{
+	font-family: "Nanum Gothic", gulim;
+	text-align: left;
+	font-weight: normal;
+	font-size: 25px;
+}
+.ct{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 20px;
+}
+.editMyInfoForm{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 15px;
+}
+#withdrawl{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 20px;
+}
+#chargeForm{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 20px;
+}
+
+#auctionMoney{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 15px;
+}
+#check_charge{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 20px;
+}
+#withdrawForm{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 20px;
+}
+#check_withdraw{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 20px;
+}
+#user_pin{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 20px;
+}
+#jjimList{
+	font-size: 15px;
+	font-weight: normal;
+	font-family: "Nanum Gothic", gulim;
+	text-align: left;
+}
+#mysellList{
+	font-size: 15px;
+	font-weight: normal;
+	font-family: "Nanum Gothic", gulim;
+	text-align: left;
+}
+#biddingList{
+	font-size: 15px;
+	font-weight: normal;
+	font-family: "Nanum Gothic", gulim;
+	text-align: left;
+}
+
+div.postingForm{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 15px;
+}
+#selectBox_sort{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 20px;
+}
+#submit_charge{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 20px;
+}
+div.bidForm{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 20px;
+}
+div.sellerResultPage{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 15px;
+}
+div.consumerResultPage{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 15px;
+}
+div.post_comment{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 15px;
+}
+.footer{
+	font-family: "Nanum Gothic", gulim;
+	text-align: center;
+	font-size: 15px;
+}
