@@ -28,10 +28,8 @@ public class EditMyInfoProAction implements CommandProcess {
 		try {
 			// 업로드
 			int maxSize = 5 * 1024 * 1024; // 5M
-			String rootPath = request.getSession().getServletContext().getRealPath("/");
-			String realPath = rootPath + "image\\profile_image";
-			String savePath = realPath.replace('\\', '/');
-			File targetDir = new File(savePath);
+			String realPath = request.getSession().getServletContext().getRealPath("image/profile_image/");
+			File targetDir = new File(realPath);
 			
 			// 디렉토리가 없을 경우 생성
 			if(!targetDir.exists()) {
